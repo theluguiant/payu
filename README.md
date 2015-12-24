@@ -77,7 +77,41 @@ con esto ya podremos usar en cualquiera de las vistas pertenecientes a este cont
 el crear boton de pago payu
 
 
-veamos un ejemplo
+
+-------------------------------------------------------------------------------
+
+pero antes vamos a configurar la merchantId y accountId vamos a 
+
+    app
+     /vendor
+           /theluguiat
+                     /payu
+                         /src
+                            /Clases
+                                  /PayuBotton.php
+
+
+
+   private $_luQueryUrl = 'https://gateway.payulatam.com/ppp-web-gateway/'; //url a donde mandamos los datos de la compra
+   private $_merchantId = ''; //valor numerico quitar caracteres y deja solo numeros quitar comillas
+   private $_accountId  = ''; //valor numerico quitar caracteres y deja solo numeros quitar comillas
+   private $_apiKey= '';  //nuestra api key
+
+   private $_test=0; // en 0 para usarla en produccion
+
+
+
+   ahora bien antes ir a la prueba vamos a ver una funcion dentro del archivo PayuBotton.php
+
+
+  
+   setSignature(): esta funcion es la que nos crea el hash para el boton es fundamental 
+                   que se llenen los campos del siguiente ejemplo, de lo contrario no se 
+                   generar el dato de esta funcion, y se nos presentar un error a la hora 
+                   de ir a pagar 
+
+
+   veamos un ejemplo
 
 
 
