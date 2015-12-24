@@ -117,24 +117,52 @@ pero antes vamos a configurar la merchantId y accountId vamos a
 
 <?php
 	Payu::payuBottom()->setDescription('prueba 1');//descripcion de la compra
-	Payu::payuBottom()->setReferenceCode('1');//referecia de la compra y/o factura
-	Payu::payuBottom()->setAmount('15000'); //saldo total de la compra y/o factura
-	Payu::payuBottom()->setTax('0');//el valor del IVA
+	
+
+  Payu::payuBottom()->setReferenceCode('1');//referecia de la compra y/o factura
+	
+
+  Payu::payuBottom()->setAmount('15000'); //saldo total de la compra y/o factura
+	
+
+  Payu::payuBottom()->setTax('0');//el valor del IVA
+
+
 	Payu::payuBottom()->setTaxReturnBase('0');//Es el valor base sobre el cual se calcula el IVA (solo valido para Colombia). En caso de que no tenga IVA debe enviarse en 0.
-	Payu::payuBottom()->setShipmentValue('0');
-	Payu::payuBottom()->setCurrency('COP');//La moneda respectiva en la que se realiza el pago.
-	Payu::payuBottom()->setLng('es');//	Idioma en el que se desea mostrar la pasarela de pagos.
-	Payu::payuBottom()->setSourceUrl('urlOrigen');
-	Payu::payuBottom()->setButtonType('SIMPLE');
-	Payu::payuBottom()->setBuyerEmail('correocomprador@gmail.com');//Campo que contiene el correo electrónico del comprador para notificarle el resultado de la transacción por correo electrónico. Se recomienda hacer una validación si se toma este dato en un formulario.
-	echo Payu::payuBottom()->renderPaymentForm();
-  ?>
+	
+
+  Payu::payuBottom()->setShipmentValue('0');
+	
+
+  Payu::payuBottom()->setCurrency('COP');//La moneda respectiva en la que se realiza el pago.
+	
+
+  Payu::payuBottom()->setLng('es');//	Idioma en el que se desea mostrar la pasarela de pagos.
+	
+
+  Payu::payuBottom()->setSourceUrl('urlOrigen');
+	
+
+  Payu::payuBottom()->setButtonType('SIMPLE');
+	
+
+  Payu::payuBottom()->setBuyerEmail('correocomprador@gmail.com');//Campo que contiene el correo electrónico del comprador para notificarle el resultado de la transacción por correo electrónico. Se recomienda hacer una validación si se toma este dato en un formulario.
+	
+
+  echo Payu::payuBottom()->renderPaymentForm();
+  
+
 ?>
+
+
 
 
 para mas informacion de estos campos ir a 
 
+
+
 http://developers.payulatam.com/es/web_checkout/integration.html
+
 
 
 No siendo mas mil gracias por usar mi api
