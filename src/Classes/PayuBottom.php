@@ -4,8 +4,8 @@ namespace Theluguiant\Payu\Classes;
 class PayuBottom{
   
   private $_luQueryUrl = 'https://gateway.payulatam.com/ppp-web-gateway/';
-  private $_merchantId = '';
-  private $_accountId  = '';
+  private $_merchantId = ''; //valor numerico quitar caracteres y deja solo numeros quitar comillas
+  private $_accountId  = ''; //valor numerico quitar caracteres y deja solo numeros quitar comillas
   private $_apiKey= '';
   private $_description;
   private $_referenceCode;

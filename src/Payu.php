@@ -1,8 +1,8 @@
 <?php
 
-namespace Savage\Payu;
+namespace Theluguiant\Payu;
 
-use Savage\Payu\Classes\PayuBottom;
+use Theluguiant\Payu\Classes\PayuBottom;
 
 class Payu 
 {

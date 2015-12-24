@@ -1,5 +1,5 @@
 <?php
-namespace Savage\Payu\Facades;
+namespace Theluguiant\Payu\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
