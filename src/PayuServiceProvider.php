@@ -1,6 +1,6 @@
 <?php
 
-namespace Savage\Payu;
+namespace Theluguiant\Payu;
 
 use Illuminate\Support\ServiceProvider;
 
