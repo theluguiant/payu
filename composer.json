@@ -1,0 +1,21 @@
+{
+    "name": "theluguiant/payu",
+    "description": "Laravel Payu API",
+    "keywords": ["laravel","payu","api"],
+     "license": "MIT",
+    "authors": [
+        {
+            "name": "mauricio garcia mona",
+            "email": "mauriciogmona@gmail.com"
+        }
+    ],
+     "minimum-stability": "dev",
+    "require": { 
+        "php": ">=5.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Theluguiant\\Payu\\": "src/"
+        }
+    }
+}
