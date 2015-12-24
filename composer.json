@@ -1,7 +1,7 @@
 {
     "name": "theluguiant/payu",
-    "description": "Laravel Payu API genera un boton de pago unico para cada compra",
-    "keywords": ["laravel","payu","api" ],
+    "description": "Laravel 5.1 Payu API genera un boton de pago unico para cada compra",
+    "keywords": ["laravel","payu","api","api payu","api payu laravel","laravel 5.1 payu"],
      "license": "MIT",
     "authors": [
         {
