@@ -3,8 +3,8 @@ namespace Theluguiant\Payu\Classes;
 
 class PayuBottom{
   
-  private $_luQueryUrl;
-  private $_merchantId; //valor numerico quitar caracteres y deja solo numeros quitar comillas
+  private $_luQueryUrl; 
+  private $_merchantId; //valor  numerico quitar caracteres y deja solo numeros quitar comillas
   private $_accountId; //valor numerico quitar caracteres y deja solo numeros quitar comillas
   private $_apiKey;
   private $_description;
