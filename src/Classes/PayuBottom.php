@@ -3,10 +3,10 @@ namespace Theluguiant\Payu\Classes;
 
 class PayuBottom{
   
-  private $_luQueryUrl = 'https://gateway.payulatam.com/ppp-web-gateway/';
-  private $_merchantId = ''; //valor numerico quitar caracteres y deja solo numeros quitar comillas
-  private $_accountId  = ''; //valor numerico quitar caracteres y deja solo numeros quitar comillas
-  private $_apiKey= '';
+  private $_luQueryUrl;
+  private $_merchantId; //valor numerico quitar caracteres y deja solo numeros quitar comillas
+  private $_accountId; //valor numerico quitar caracteres y deja solo numeros quitar comillas
+  private $_apiKey;
   private $_description;
   private $_referenceCode;
   private $_amount;
@@ -18,14 +18,14 @@ class PayuBottom{
   private $_sourceUrl;
   private $_buttonType;
   private $_signature;
-  private $_test=0;
+  private $_test;
   private $_buyerEmail;
   private $_htmlFormCode;
   private $_htmlCode;
   private $_imagebtn='http://www.payulatam.com/img-secure-2015/boton_pagar_pequeno.png';
   private $_btnName;
 
-  function __construct($description='',$referenceCode='',$amount='',$tax='',$taxReturnBase='',$shipmentValue='',$currency='',$lng='',$sourceUrl='',$buttonType='',$buyerEmail=''){
+  function __construct($accountid='',$url='',$apikey='',$test='',$description='',$referenceCode='',$amount='',$tax='',$taxReturnBase='',$shipmentValue='',$currency='',$lng='',$sourceUrl='',$buttonType='',$buyerEmail=''){
         if(!empty($description)){
             $this->setDescription($description);
         }
@@ -58,6 +58,21 @@ class PayuBottom{
         }
         if(!empty($buyerEmail)){
             $this->setBuyerEmail($buyerEmail);
+        }
+        if(!empty($test)){
+            $this->setTest($test);
+        }
+        if(!empty($apikey)){
+            $this->setApikey($apikey);
+        }
+        if(!empty($merchantid)){
+            $this->setMerchantid($merchantid);
+        }
+        if(!empty($url)){
+          $this->setUrlgate($url);
+        }
+        if(!empty($accountid)){
+          $this->setAccountid($accountid);
         }
   }
   public function setBuyerEmail($buyerEmail){
@@ -97,6 +112,21 @@ class PayuBottom{
   }
   public function setBtnName($btnName){
        $this->_btnName = $btnName;
+  }
+  public function setTest($test){
+       $this->_test = $test;
+  }
+  public function setApikey($apikey){
+       $this->_apiKey = $apikey;
+  }
+  public function setMerchantid($merchantid){
+        $this->_merchantId = $merchantid;
+  }
+  public function setUrlgate($url){
+        $this->_luQueryUrl=$url;
+  }
+  public function setAccountid($accountid){
+        $this->_accountId = $accountid;
   }
 
   /**Agregar inputs**/
