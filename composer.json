@@ -9,10 +9,10 @@
             "email": "mauriciogmona@gmail.com"
         }
     ],
-     "minimum-stability": "2.0.0",
+     "minimum-stability": "dev",
     "require": { 
         "php": ">=5.4",
-        "illuminate/support": "~5.*"
+        "illuminate/support": "~5.0.*|5.1.*|5.2.*"
     },
     "autoload": {
         "psr-4": {
